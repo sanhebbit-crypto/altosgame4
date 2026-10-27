@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios Alto´s Game</title>
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <!-- Enlace a Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+    <!-- Final enlace Bootstrap -->
+
+    <!-- CSS -->
+     <link rel="stylesheet" href="style.css">
+    <!-- CSS -->
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar md:navbar-expand bg-dark fixed-top" data-bs-theme="dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/joystick.svg" alt="Logo Alto's game" width="35" height="29" class="me-3">
+                Alto's Game
+            </a>
+            <button class="btn-icon navbar-toggler" type="button" data-bs-toggle="drawer" data-bs-target="#navbarDrawer"
+                aria-controls="navbarDrawer" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" aria-hidden="true"></span>
+            </button>
+            <dialog class="drawer drawer-end" tabindex="-1" id="navbarDrawer" aria-labelledby="navbarDrawerLabel">
+                <div class="drawer-header">
+                    <h5 class="drawer-title" id="navbarDrawerLabel">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Close"></button>
+                </div>
+                <div class="drawer-body mb-2 md:mb-0">
+                    <ul class="nav navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link" type="button" data-bs-toggle="menu" aria-expanded="false">
+                                Servicios
+                            </button>
+                            <div class="menu">
+                                <a class="menu-item" href="servicios.html">Servicios</a>
+                                <a class="menu-item" href="servicios.html">Servicios 1</a>
+                                <hr class="menu-divider">
+                                <a class="menu-item" href="servicios.html">Servicios 2</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html" aria-disabled="true">Contacto</a>
+                        </li>
+                    </ul>
+
+                    <!-- Boton a whatsapp -->
+                    <span class="navbar-text lg:ms-4">
+                        <a href="https://wa.me/525652009564?text=Hola%2C%20Me%20gustar%C3%ADa%20tener%20informes%20de%20tus%20videojuegos...%20%E2%9C%8C%EF%B8%8F%F0%9F%98%81"
+                            class="text-decoration-none fg-white" target="_blank">
+                            <img src="img/whatsappsmall.png" alt="Contacto por whatsApp" width="100">
+                        </a>
+                    </span>
+                    <!-- Final de boton a whatsapp -->
+
+                </div>
+            </dialog>
+        </div>
+    </nav>
+    <!-- Navbar -->
+
+    <!-- Hero -->
+    <div class="container-fluid bg-black fg-white py-11 mt-11">
+        <div class="container py-11">
+            <div class="row align-items-center">
+                <div class="md:col-7">
+                    <p class="fg-info fw-bold mb-6">
+                        NUESTROS SERVICIOS
+                    </p>
+                    <h1 class="fs-6xl fw-bold">
+                        Todo lo que nesecitas
+                        <span class="fg-info">
+                            En un solo lugar
+                        </span>
+                    </h1>
+                    <p class="fs-light fs-lg mt-4">
+                        Descubre nuestras diferentes opciones y encuentra el servicio que mejor se adapte a tus
+                        necesiades.
+                    </p>
+                    <a href="servicios.html" class="btn-solid theme-info btn-lg fg-white mt-3">
+                        Conocer servicios
+                    </a>
+                </div>
+                <div class="md:col-5 text-center mt-4 md:mt-0">
+                    <img src="img/servicios.jfif" class="img-fluid rounded shadow" alt="Nuestro servicios">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Final Hero -->
+
+    <!-- Introducción -->
+
+    <section class="container py-12" id="servicios">
+        <div class="text-center">
+            <h2 class="fs-4xl fw-bold">
+                <span id="texto-animado" data-mensajes="Nuestros servicios | Alternativas | Ofertas"></span>
+            </h2>
+            <p class="fs-light fs-lg fg-info">
+                Soluciones diseñadas para ofrecerte una experiencia completa
+            </p>
+            <p class="text-muted">
+                Conoce nuestras principales opciones y descubre todo lo que podemos ofrecerte
+            </p>
+        </div>
+        <!-- ====================================================================== -->
+        <!-- CARDS -->
+        <!-- ==================================================================== -->
+
+        <div class="row row-cols-1 md:row-cols-3 g-4 mt-4">
+            <!-- SERVICIOS -->
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <img src="img/Servicio1.jfif" class="card-img-top" alt="Servicio">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">
+                            Servicio
+                        </h5>
+                        <p class="card-text">
+                            Conoce las características y ventajas de nuestro primer servicio.
+                        </p>
+                    </div>
+                    <div class="card-footer text-center bg-white">
+                        <a href="servicio" class="btn-solid theme-info fg-white">
+                            Màs informaciòn
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Servicio 1 -->
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <img src="img/Servicio2.jfif" class="card-img-top" alt="Servicios 1">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">
+                            Servicio 1
+                        </h5>
+                        <p class="card-text">
+                            Una alternativa pensada para ofrecer solucuones pràctica y eficientes.
+                        </p>
+                    </div>
+                    <div class="card-footer text-center bg-white">
+                        <a href="servicios" class="btn-solid theme-info fg-white">
+                            Màs informaciòn
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Servicio 2 -->
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <img src="img/servicios3.jfif" class="card-img-top" alt="Servicios 2">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">
+                            Servicio 2
+                        </h5>
+                        <p class="card-text">
+                            Descubre una tercera opciòn que completa nuestra oferta de servicios
+                        </p>
+                    </div>
+                    <div class="card-footer text-center bg-white">
+                        <a href="servicios" class="btn-solid theme-info fg-white">
+                            Solicitar informacion
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Final introducciòn -->
+
+    <!-- SECCION DESTACADA -->
+
+    <div class="container-fluid bg-1">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="md:col-6">
+                    <p class="fg-info fw-bold">
+                        ¿PORQUÈ ELEGIRNOS?
+                    </p>
+                    <h2 class="fs-4xl fw-bold">
+                        Una experiencia pensada para ti
+                    </h2>
+                    <p class="fs-light fs-lg">
+                        Nuestro objetivo es ofrecer servicios de calidad, acompañados de una atenciòn cercana y
+                        sencilla.
+                    </p>
+                    <hr>
+                    <p>
+                        Queremos que encuentres exactamente lo que estàs buscando de una manera ràpida, clara y
+                        accesible.
+                    </p>
+                    <a href="#preguntas" class="btn-outline theme-info">
+                        Preguntas frecuentes
+                    </a>
+                </div>
+                <div class="md:col-6 mt-4 md:mt-0">
+                    <img src="img/Servicios destacados.jfif" class="img-fluid rounded shadow"
+                        alt="Servicios destacados">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Final Sección destacada -->
+
+    <!-- Beneficios -->
+    <section class="container py-12">
+        <div class="text-center mb-12">
+            <h2 class="fs-4xl fw-bold">
+                Lo que encontrarás
+            </h2>
+            <p class="fs-light fs-lg fg-info">
+                Compromiso, calidad y atención
+            </p>
+        </div>
+        <div class="row text-center">
+            <div class="col-12 md:col-4 mb-11">
+                <div class="p-11">
+                    <div class="fs-4xl fs-light fg-info mb-9">
+                        ✓
+                    </div>
+                    <h4>
+                        Calidad
+                    </h4>
+                    <p class="text-muted">
+                        Buscamos ogrcer soluciones que cumplan con las necediades de nuestros clientes.
+                    </p>
+                </div>
+            </div>
+            <div class="col-12 md:col-4 mb-11">
+                <div class="p-11">
+                    <div class="fs-4xl fs-light fg-info mb-9">
+                        ★
+                    </div>
+                    <h4>
+                        Experiencia
+                    </h4>
+                    <p class="text-muted">
+                        Contamos con una propuesta pensada para brindar una experiencia sencilla y agradable.
+                    </p>
+                </div>
+            </div>
+            <div class="col-12 md:col-4 mb-11">
+                <div class="p-11">
+                    <div class="fs-4xl fs-light fg-info mb-9">
+                        ♥
+                    </div>
+                    <h4>
+                        Atención
+                    </h4>
+                    <p class="text-muted">
+                        Estamos disponibles para resolver tus dudas y ayudarte a encontrar la mejor opción
+                    </p>
+                </div>
+            </div </div>
+    </section>
+    <!-- Final de beneficios -->
+
+    <!-- PREGUNTAS FRECUENTES -->
+    <section class="container py-9" id="preguntas">
+        <div class="text-center mb-9">
+            <h2 class="fs-4xl fw-bold"> Preguntas frecuentes </h2>
+            <p class="fs-light fs-lg fg-info"> Encuentra respuestas a las preguntas más comunes. </p>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-12 lg:col-9"> <!-- ACORDEÓN -->
+                <div class="accordion accordion-gap theme-primary">
+                    <details class="accordion-item" name="accordionExample" open>
+                        <summary class="accordion-header"> ¿Qué servicios ofrecen? <svg class="accordion-icon"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor"
+                                stroke-linecap="round" strokelinejoin="round">
+                                <path d="m2 5 6 6 6-6" />
+                            </svg> </summary>
+                        <div class="accordion-body"> Contamos con diferentes servicios diseñados para atender distintas
+                            necesidades. Puedes consultar cada uno de ellos desde esta página y acceder a su información
+                            detallada mediante los botones de cada servicio. </div>
+                    </details>
+                    <details class="accordion-item" name="accordionExample" open>
+                        <summary class="accordion-header"> ¿Cómo puedo solicitar un servicio? <svg
+                                class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                fill="none" stroke="currentColor" stroke-linecap="round" strokelinejoin="round">
+                                <path d="m2 5 6 6 6-6" />
+                            </svg> </summary>
+                        <div class="accordion-body"> Puedes conocer primero las características de cada servicio y
+                            posteriormente utilizar el botón de contacto para solicitar información o resolver cualquier
+                            duda antes de contratarlo. </div>
+                    </details>
+                    <details class="accordion-item" name="accordionExample" open>
+                        <summary class="accordion-header"> ¿Puedo obtener más información antes de contratar? <svg
+                                class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                fill="none" stroke="currentColor" stroke-linecap="round" strokelinejoin="round">
+                                <path d="m2 5 6 6 6-6" />
+                            </svg> </summary>
+                        <div class="accordion-body"> Sí. Antes de tomar una decisión puedes solicitar información
+                            adicional sobre cualquiera de nuestros servicios. Nuestro objetivo es que conozcas
+                            claramente lo que incluye cada opción. </div>
+                    </details>
+                    <details class="accordion-item" name="accordionExample" open>
+                        <summary class="accordion-header"> ¿Los servicios tienen diferentes características? <svg
+                                class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                fill="none" stroke="currentColor" stroke-linecap="round" strokelinejoin="round">
+                                <path d="m2 5 6 6 6-6" />
+                            </svg> </summary>
+                        <div class="accordion-body"> Sí. Cada servicio cuenta con características y objetivos
+                            diferentes. Por eso te recomendamos revisar la información individual de cada uno para
+                            identificar cuál se adapta mejor a lo que estás buscando. </div>
+                    </details>
+                    <details class="accordion-item" name="accordionExample">
+                        <summary class="accordion-header"> ¿Puedo comunicarme con ustedes si tengo dudas? <svg
+                                class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                fill="none" stroke="currentColor" stroke-linecap="round" strokelinejoin="round">
+                                <path d="m2 5 6 6 6-6" />
+                            </svg> </summary>
+                        <div class="accordion-body"> Claro. Puedes utilizar nuestros medios de contacto para realizar
+                            preguntas, solicitar información o recibir orientación sobre el servicio que te interesa.
+                        </div>
+                    </details>
+                    <details class="accordion-item" name="accordionExample">
+                        <summary class="accordion-header"> ¿Dónde puedo consultar los servicios individuales? <svg
+                                class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                fill="none" stroke="currentColor" stroke-linecap="round" strokelinejoin="round">
+                                <path d="m2 5 6 6 6-6" />
+                            </svg> </summary>
+                        <div class="accordion-body"> Puedes utilizar el menú superior de la página. Dentro de la sección
+                            "Servicios" encontrarás enlaces hacia las páginas individuales de Servicio 1 y Servicio 2,
+                            donde podrás consultar información más específica. </div>
+                    </details>
+                </div>
+            </div>
+        </div>
+    </section> <!-- Final preguntas frecuentes --> <!-- LLAMADO A LA ACCIÓN -->
+    <div class="container-fluid bg-black fg-white py-11" id="contacto">
+        <div class="container text-center">
+            <h2 class="fs-4xl fw-bold"> ¿Tienes alguna pregunta? </h2>
+            <p class="fs-light fs-lg"> Estamos listos para ayudarte. </p> <a href="tel:+525566033464"
+                class="btn-solid theme-info btn-lg fs-lg fg-white"> Contáctanos </a>
+        </div>
+    </div> 
+    <!-- Final llamado a la acción -->
+
+     <!-- Footer pie de página-->
+        <footer class="container py-5 my-3">
+            <div class="row align-items-center">
+                <div class="md:col-6 text-center md:text-start">
+                    <span class="fg-secondary">
+                        &reg; 2026 Alto's Game Todos los derechos reservados.
+                    </span>
+                </div>
+
+                <div class="md:col-6">
+                    <ul class="nav justify-content-end">
+                        <li class="nav-item">
+                            <a href="https://x.com/" target="_blank" class="nav-link px-2 fg-secondary">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#000000" class="bi bi-twitter-x" viewBox="0 0 16 16">
+  <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+</svg>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="https://www.instagram.com" target="_blank" class="nav-link px-2 fg-secondary">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#000000" class="bi bi-instagram" viewBox="0 0 16 16">
+  <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+</svg>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="https://www.facebook.com" target="_blank" class="nav-link px-2 fg-secondary">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#000000" class="bi bi-facebook" viewBox="0 0 16 16">
+  <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+</svg>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="https://wa.me/525652009564?text=Hola%2C%20Me%20gustar%C3%ADa%20tener%20informes%20de%20tus%20videojuegos...%20%E2%9C%8C%EF%B8%8F%F0%9F%98%81" target="_blank" class="nav-link px-2 fg-secondary">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#000000" class="bi bi-whatsapp" viewBox="0 0 16 16">
+  <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+</svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    <!-- Final footer -->
+
+
+    <!-- Scrip de Bootstrap -->
+    <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL"
+        crossorigin="anonymous"></script>
+    <!-- Scrip de bootstrap -->
+
+    <!-- Scrip animación.js -->
+    <script src="animacion.js"></script>
+    <!-- Final Scrip animación.js -->
+
+</body>
+
+</html>

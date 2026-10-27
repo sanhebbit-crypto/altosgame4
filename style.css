@@ -1,0 +1,15 @@
+#texto-animado{
+    color: #0dcaf0;
+}
+
+#texto-animado::after{
+    content: "|";
+    margin-left: 3px;
+    animation: parpadeo 0.7s infinite;
+}
+
+@keyframes parpadeo{
+    50%{
+        opacity: 0;
+    }
+}

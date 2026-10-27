@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alto's Game | Videojuegos y tecnología</title>
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <!-- Enlace a Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+    <!-- Final enlace Bootstrap -->
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- CSS -->
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar md:navbar-expand bg-dark fixed-top" data-bs-theme="dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/joystick.svg" alt="Logo Alto's game" width="35" height="29" class="me-3">
+                Alto's Game
+            </a>
+            <button class="btn-icon navbar-toggler" type="button" data-bs-toggle="drawer" data-bs-target="#navbarDrawer" aria-controls="navbarDrawer" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" aria-hidden="true"></span>
+            </button>
+            <dialog class="drawer drawer-end" tabindex="-1" id="navbarDrawer" aria-labelledby="navbarDrawerLabel">
+            <div class="drawer-header">
+                <h5 class="drawer-title" id="navbarDrawerLabel">Menu</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Close"></button>
+            </div>
+            <div class="drawer-body mb-2 md:mb-0">
+                <ul class="nav navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link" type="button" data-bs-toggle="menu" aria-expanded="false">
+                    Servicios
+                    </button>
+                    <div class="menu">
+                    <a class="menu-item" href="servicios.html">Servicios</a>
+                    <a class="menu-item" href="servicios.html">Servicios 1</a>
+                    <hr class="menu-divider">
+                    <a class="menu-item" href="servicios.html">Servicios 2</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contacto.html" aria-disabled="true">Contacto</a>
+                </li>
+                </ul>
+
+                <!-- Boton a whatsapp -->
+                <span class="navbar-text lg:ms-4">
+                    <a href="https://wa.me/525652009564?text=Hola%2C%20Me%20gustar%C3%ADa%20tener%20informes%20de%20tus%20videojuegos...%20%E2%9C%8C%EF%B8%8F%F0%9F%98%81" class="text-decoration-none fg-white" target="_blank">
+                        <img src="img/whatsappsmall.png" alt="Contacto por whatsApp" width="100">
+                    </a>
+                </span>
+                <!-- Final de boton a whatsapp -->
+                
+            </div>
+            </dialog>
+        </div>
+        </nav>
+    <!-- Navbar -->
+
+    <!-- Carrusel -->
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active position-relative">
+                    <img src="img/slider.jpg" class="d-block w-100 rounded-5" alt="slider">
+                    <div class="position-absolute bottom-0 start-50 translate-middle text-center fg-white w-50 p-3 bg-black bg-50 rounded-5">
+                        <h2 class="fw-bold">Alto's Game</h2>
+                        <p class="fs-5">Videojuegos y tecnología en un solo lugar</p>
+                        <a href="#" class="btn btn-primary btn-lg">Conocer más</a>
+                    </div>
+                </div>
+                <div class="carousel-item position-relative">
+                    <img src="img/Slider1.jpg" class="d-block w-100 rounded-5" alt="Slider1">
+                    <div class="position-absolute bottom-0 start-50 translate-middle text-center fg-white w-50 p-3 bg-black bg-50 rounded-5">
+                        <h2 class="fw-bold">Descubre nuevas experiencias</h2>
+                        <p class="fs-5">Conoce nuestros contenidos, recomendaciones y novedades</p>
+                        <a href="#" class="btn btn-primary btn-lg">Conocer más</a>
+                    </div>
+                </div>
+                <div class="carousel-item position-relative">
+                <img src="img/slider2.jpg" class="d-block w-100 rounded-5" alt="Slider2">
+                <div class="position-absolute bottom-0 start-50 translate-middle text-center fg-white w-50 p-3 bg-black bg-50 rounded-5">
+                        <h2 class="fw-bold">Forma parte de nuestra comunidad</h2>
+                        <p class="fs-5">Aprende, descubre y disfruta del mundo gamer</p>
+                        <a href="#" class="btn btn-primary btn-lg">Conocer más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div>
+                <button class="btn-icon btn-sm carousel-control-play-pause" type="button" data-bs-target="#carouselExampleAutoplaying" aria-label="Pause" data-bs-pause-label="Pause" data-bs-play-label="Play">
+                    <span class="carousel-icon-pause" aria-hidden="true"></span>
+                    <span class="carousel-icon-play" aria-hidden="true"></span>
+                </button>
+                <button class="btn-icon btn-sm" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                    <span class="carousel-icon-prev" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="btn-icon btn-sm" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                    <span class="carousel-icon-next" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+                </div>
+            </div>
+        </div>
+    <!-- Final carrusel -->
+
+    <!-- Presentacion -->
+        <section class="container py-5">
+            <div class="row justify-content-center">
+                <div class="lg:col-9 text-center">
+                    <span class="badge bg-info text-dark mb-3">
+                        ALTO'S GAME
+                    </span>
+                    <h2 class="fs-4xl fw-bold">
+                        <span id="texto-animado" data-mensajes="Descrubre videojuegos| Explora la tecnología | Conoce las novedades | Vive nuevas experiencias"></span>
+                    </h2>
+                    <p class="fw-light fs-lg text-secondary mt-3">
+                        Descubre un espacio dedicado a los videojuegos,
+                    la tecnología y todo aquello que hace de este mundo
+                    una experiencia única.
+                    </p>
+                </div>
+            </div>
+        </section>
+    <!-- Final de presentacion -->
+
+    <!-- Cards -->
+        <section class="container pb-5">
+            <div class="row row-cols-1 md:row-cols-3 g-4">
+                <div class="col">
+                    <div class="card h-100">
+                    <img src="img/img card1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                        <h4 class="card-title">Videojuegos</h4>
+                        <p class="card-text">Explora diferentes géneros,
+                            plataformas y experiencias
+                            dentro del mundo de los videojuegos.</p>
+                    </div>
+                    <div class="card-footer bg-white border-0 text-center pb-4">
+                        <a href="#" class="btn-outline theme-secondary">Más Información</a>
+                    </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                    <img src="img/img card2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                        <h4 class="card-title">Tecnología</h4>
+                        <p class="card-text">Conoce herramientas,
+                            dispositivos y novedades
+                            relacionadas con la tecnología.</p>
+                    </div>
+                    <div class="card-footer bg-white border-0 text-center pb-4">
+                        <a href="#" class="btn-outline theme-secondary">Más Información</a>
+                    </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                    <img src="img/img crad3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                        <h4 class="card-title">Comunidad</h4>
+                        <p class="card-text">Comparte experiencias,
+                            descubre contenido y forma parte
+                            de nuestra comunidad.</p>
+                    </div>
+                    <div class="card-footer bg-white border-0 text-center pb-4">
+                        <a href="#" class="btn-outline theme-secondary">Más Información</a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!-- Final de cards -->
+
+    <!-- Sección destacada -->
+        <section class="container-fluid bg-secondary py-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="lg:col-8">
+                        <span class="badge bg-black mb-3 fg-white">
+                            CONTENIDO DESTACADO
+                        </span>
+                        
+                        <h2 class="fs-4xl fw-bold">
+                            Más que videojuegos
+                        </h2>
+                        
+                        <p class="fw-light">
+                            En Alto's Game queremos crear un espacio
+                        donde puedas descubrir nuevas experiencias,
+                        aprender sobre tecnología y mantenerte
+                        actualizado sobre el mundo gamer.
+                        </p>
+                        
+                        <hr class="my-4">
+
+                        <p class="fg-secondary">
+                            Nuestro objetivo es ofrecer contenido
+                        sencillo, entretenido y accesible para
+                        todo tipo de usuarios.
+                        </p>
+                    </div>
+
+                    <div class="lg:col-4 text-center mt-4 lg:mt-0">
+                        <div class="fs-6xl">
+                            🎮
+                            <!-- Emojipedia -->
+                        </div>
+                        <p class="fw-bold mt-3">
+                            Vive la experiencia
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!-- Final sección destacada -->
+
+    <!-- Sección 2 -->
+        <section class="container py-5">
+            <div class="text-center mb-5">
+                <span class="badge bg-info text-black mb-3">
+                    CONOCE MÁS
+                </span>
+                <h2 class="fs-4xl fw-bold">
+                    Preguntas frecuentes
+                </h2>
+                <p class="fw-light fg-secondary fs-lg">
+                    Conoce un poco más sobre lo que encontrarás
+                en Alto's Game.
+                </p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Acordeon -->
+                <div class="col-12 lg:col-7">
+                    <div class="accordion theme-info">
+                        <details class="accordion-item" name="accordionExample" open>
+                            <summary class="accordion-header">
+                            ¿Qué encontrarás en Alto's Game?
+                            <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="m2 5 6 6 6-6"/></svg>
+                            </summary>
+                            <div class="accordion-body">
+                            Encontrarás contenido relacionado
+                                con videojuegos, tecnología,
+                                recomendaciones y diferentes
+                                experiencias del mundo gamer.
+                            </div>
+                        </details>
+                        <details class="accordion-item" name="accordionExample">
+                            <summary class="accordion-header">
+                            ¿Para quién está pensado el sitio?
+                            <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="m2 5 6 6 6-6"/></svg>
+                            </summary>
+                            <div class="accordion-body">
+                            Para cualquier persona interesada
+                                en los videojuegos, la tecnología
+                                y la cultura gamer.
+                            </div>
+                        </details>
+                        <details class="accordion-item" name="accordionExample">
+                            <summary class="accordion-header">
+                            ¿Habrá nuevo contenido?
+                            <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="m2 5 6 6 6-6"/></svg>
+                            </summary>
+                            <div class="accordion-body">
+                            Sí. Nuestro objetivo es incorporar
+                                nuevos contenidos y secciones
+                                próximamente.
+                            </div>
+                        </details>
+                    </div>
+                </div>
+                <!-- Acordeon -->
+
+                <!-- Card lateral -->
+                <div class="col-12 lg:col-5">
+                    <div class="card">
+                        <img src="img/img card list.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h4 class="card-title">Lo que encontraras</h4>
+                            <p class="card-text">Un espacio pensado para descubrir,
+                            aprender y disfrutar.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">🎮 Videojuegos</li>
+                            <li class="list-group-item">💻 Tecnología</li>
+                            <li class="list-group-item">🕹️ Cultura gamer</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Final Card lateral -->
+            </div>
+        </section>
+    <!-- Final sección 2 -->
+
+    <!-- Llamado a la acción-->
+        <section class="container-fluid bg-black fg-white py-5">
+            <div class="container text-center">
+                <h2 class="fs-4xl fw-bold">
+                    ¿Listo para comenzar?
+                </h2>
+                <p class="fw-light fs-lg">
+                    Explora nuestro contenido y descubre todo
+                lo que Alto's Game tiene para ofrecer.
+                </p>
+                <a href="#" class="btn-solid btn-styled theme-info fg-white btn-lg">Conoce más sobre nosotros</a>
+            </div>
+        </section>
+    <!-- Fin de llamado a la acción -->
+
+    <!-- Footer pie de página-->
+        <footer class="container py-5 my-3">
+            <div class="row align-items-center">
+                <div class="md:col-6 text-center md:text-start">
+                    <span class="fg-secondary">
+                        &reg; 2026 Alto's Game Todos los derechos reservados.
+                    </span>
+                </div>
+
+                <div class="md:col-6">
+                    <ul class="nav justify-content-end">
+                        <li class="nav-item">
+                            <a href="https://x.com/" target="_blank" class="nav-link px-2 fg-secondary">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#000000" class="bi bi-twitter-x" viewBox="0 0 16 16">
+  <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+</svg>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="https://www.instagram.com" target="_blank" class="nav-link px-2 fg-secondary">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#000000" class="bi bi-instagram" viewBox="0 0 16 16">
+  <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+</svg>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="https://www.facebook.com" target="_blank" class="nav-link px-2 fg-secondary">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#000000" class="bi bi-facebook" viewBox="0 0 16 16">
+  <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+</svg>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="https://wa.me/525652009564?text=Hola%2C%20Me%20gustar%C3%ADa%20tener%20informes%20de%20tus%20videojuegos...%20%E2%9C%8C%EF%B8%8F%F0%9F%98%81" target="_blank" class="nav-link px-2 fg-secondary">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#000000" class="bi bi-whatsapp" viewBox="0 0 16 16">
+  <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+</svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    <!-- Final footer -->
+
+
+
+
+    <!-- Scrip de Bootstrap -->
+    <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL" crossorigin="anonymous"></script>
+    <!-- Scrip de bootstrap -->
+
+    <!-- animacion.js -->
+    <script src="animacion.js"></script>
+    <!-- Final animacion.js -->
+</body>
+</html>
